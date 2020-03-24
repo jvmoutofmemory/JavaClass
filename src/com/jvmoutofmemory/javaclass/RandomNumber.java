@@ -2,12 +2,11 @@ package com.jvmoutofmemory.javaclass; //声明包名
 
 //导入外部类
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  * 测试 Random 类的方法
  */
-
-// 类的声明
 public class RandomNumber {
 
     /**
@@ -32,6 +31,7 @@ public class RandomNumber {
     // 程序执行入口
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
         // 创建实例
         RandomNumber randomNumber = new RandomNumber();
         Random random = new Random();
@@ -39,6 +39,5 @@ public class RandomNumber {
         randomNumber.setNumber(random.nextInt());
 
         System.out.println(randomNumber.getNumber());
-
     }
 }
